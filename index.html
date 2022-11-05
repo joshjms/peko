@@ -7,38 +7,41 @@
     </head>
     <body>
         <div id="hero-image" class="w-full h-[100vh]"></div>
-        <div class="w-[80%] flex my-10 mx-auto gap-10">
-            <div class="w-96">
-                <img
-                    class="w-80 h-80 rounded-full object-cover"
-                    src="https://prabowodjonatan.id/hall-of-fame/static/img/kevin_jonathan_kusnomo.jpg"
-                />
+        <div class="min-h-[100vh] flex flex-col justify-center items-center">
+            <div class="w-[80%] flex my-10 mx-auto gap-10">
+                <div class="w-96">
+                    <img
+                        class="w-80 h-80 rounded-full object-cover"
+                        src="https://prabowodjonatan.id/hall-of-fame/static/img/kevin_jonathan_kusnomo.jpg"
+                    />
+                </div>
+                <div class="">
+                    <h1 class="text-8xl font-bold" id="kevin">
+                        <span class="text-red-600">K</span>evin
+                    </h1>
+                    <h1 class="text-8xl font-bold" id="jonathan">Jonathan</h1>
+                    <h1 class="text-8xl font-bold" id="kusnomo">
+                        <span class="text-red-600">K</span>usnomo
+                    </h1>
+                </div>
             </div>
-            <div class="">
-                <h1 class="text-8xl font-bold" id="kevin">
-                    <span class="text-red-600">K</span>evin
-                </h1>
-                <h1 class="text-8xl font-bold" id="jonathan">Jonathan</h1>
-                <h1 class="text-8xl font-bold" id="kusnomo">
-                    <span class="text-red-600">K</span>usnomo
-                </h1>
+
+            <div class="w-[50%] p-5 ml-20">
+                <p class="text-5xl mb-5">
+                    <em
+                        ><span class="font-serif font-bold">"</span>Sebagai
+                        calon presiden pemilu 2024,
+                        <span class="text-xs">saya akan megawati</span>.
+                        <span class="font-serif font-bold">"</span></em
+                    >
+                </p>
+
+                <p class="text-xl uppercase font-black ml-auto">
+                    Kevin Jonathan Kusnomo, 2022
+                </p>
             </div>
-        </div>
 
-        <div class="w-[50%] p-5 ml-20 my-20">
-            <p class="text-5xl mb-5">
-                <em
-                    ><span class="font-serif font-bold">"</span>Sebagai calon
-                    presiden pemilu 2024,
-                    <span class="text-xs"
-                        >saya akan ikutan korupsi duit masyarakat</span
-                    >. <span class="font-serif font-bold">"</span></em
-                >
-            </p>
-
-            <p class="text-xl uppercase font-black ml-auto">
-                Kevin Jonathan Kusnomo, 2022
-            </p>
+            <a href = "https://osn.toki.id/statistik/peserta/984" class="text-blue-500 visited:text-purple-800 hover:underline">orz me</a>
         </div>
     </body>
 
@@ -69,7 +72,7 @@
 
         setTimeout(() => {
             kevin.innerHTML = "<span class='text-red-600'>K</span>epakkan";
-            jonathan.innerHTML = "Sayap";
+            jonathan.innerHTML = "Jayap";
             kusnomo.innerHTML =
                 "<span class='text-red-600'>K</span>ebhinnekaan";
         }, 5000);
