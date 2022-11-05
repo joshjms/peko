@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>bebek page</title>
+
+        <style></style>
+    </head>
+    <body>
+        <div id="hero-image" class="w-full h-[100vh]"></div>
+        <div class="w-[80%] flex my-10 mx-auto gap-10">
+            <div class="w-96">
+                <img
+                    class="w-80 h-80 rounded-full object-cover"
+                    src="https://prabowodjonatan.id/hall-of-fame/static/img/kevin_jonathan_kusnomo.jpg"
+                />
+            </div>
+            <div class="">
+                <h1 class="text-8xl font-bold" id="kevin">
+                    <span class="text-red-600">K</span>evin
+                </h1>
+                <h1 class="text-8xl font-bold" id="jonathan">Jonathan</h1>
+                <h1 class="text-8xl font-bold" id="kusnomo">
+                    <span class="text-red-600">K</span>usnomo
+                </h1>
+            </div>
+        </div>
+
+        <div class="w-[50%] p-5 ml-20 my-20">
+            <p class="text-5xl mb-5">
+                <em
+                    ><span class="font-serif font-bold">"</span>Sebagai calon
+                    presiden pemilu 2024,
+                    <span class="text-xs"
+                        >saya akan ikutan korupsi duit masyarakat</span
+                    >. <span class="font-serif font-bold">"</span></em
+                >
+            </p>
+
+            <p class="text-xl uppercase font-black ml-auto">
+                Kevin Jonathan Kusnomo, 2022
+            </p>
+        </div>
+    </body>
+
+    <script>
+        const e = document.getElementById("hero-image");
+        let i = 0;
+
+        const gambar_kevin = [
+            "https://4.bp.blogspot.com/-HMhSEJyapKc/VtpU6fbHTlI/AAAAAAAABzY/r0nqKaiSSX0/w1200-h630-p-k-no-nu/kevin.jpg",
+            "https://www.lowyinstitute.org/sites/default/files/styles/interpreter_article_image/public/GettyImages-1161853318.jpg?itok=mspoKSPf",
+        ];
+
+        e.style.backgroundImage = `url(${gambar_kevin[i]})`;
+        e.style.backgroundPosition = "center";
+        e.style.backgroundRepeat = "no-repeat";
+        e.style.backgroundAttachment = "fixed";
+        e.style.backgroundSize = "cover";
+
+        setInterval(() => {
+            e.style.backgroundImage = `url(${
+                gambar_kevin[++i % gambar_kevin.length]
+            })`;
+        }, 5000);
+
+        const kevin = document.getElementById("kevin");
+        const jonathan = document.getElementById("jonathan");
+        const kusnomo = document.getElementById("kusnomo");
+
+        setTimeout(() => {
+            kevin.innerHTML = "<span class='text-red-600'>K</span>epakkan";
+            jonathan.innerHTML = "Sayap";
+            kusnomo.innerHTML =
+                "<span class='text-red-600'>K</span>ebhinnekaan";
+        }, 5000);
+    </script>
+</html>
